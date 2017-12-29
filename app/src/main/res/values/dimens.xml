@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="player_names">14sp</dimen>
+    <dimen name="player_scores">58sp</dimen>
+
+</resources>

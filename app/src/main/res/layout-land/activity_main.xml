@@ -34,20 +34,14 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="Player One"
-                    android:textSize="14sp" />
+                    style="@style/player_name_style"
+                    android:text="@string/player_one"
+                    android:textSize="@dimen/player_names" />
 
                 <TextView
                     android:id="@+id/player_one_score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="58sp" />
+                    style="@style/score_style"
+                    android:text="@string/_0" />
 
             </LinearLayout>
 
@@ -58,20 +52,14 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="Player Two"
-                    android:textSize="14sp" />
+                    style="@style/player_name_style"
+                    android:text="@string/player_two"
+                    android:textSize="@dimen/player_names" />
 
                 <TextView
                     android:id="@+id/player_two_score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="58sp" />
+                    style="@style/score_style"
+                    android:text="@string/_0" />
 
             </LinearLayout>
 
@@ -121,17 +109,17 @@
 
                     <Button
                         style="@style/button_style"
-                        android:onClick="addOneForPlayerOne"
+                        android:onClick="addFourForPlayerOne"
                         android:text="@string/_4" />
 
                     <Button
                         style="@style/button_style"
-                        android:onClick="addTwoForPlayerOne"
+                        android:onClick="addFiveForPlayerOne"
                         android:text="@string/_5" />
 
                     <Button
                         style="@style/button_style"
-                        android:onClick="addThreeForPlayerOne"
+                        android:onClick="addSixForPlayerOne"
                         android:text="@string/_6" />
                 </LinearLayout>
 
@@ -158,17 +146,17 @@
 
                     <Button
                         style="@style/button_style"
-                        android:onClick="addOneForPlayerOne"
+                        android:onClick="addOneForPlayerTwo"
                         android:text="@string/_1" />
 
                     <Button
                         style="@style/button_style"
-                        android:onClick="addTwoForPlayerOne"
+                        android:onClick="addTwoForPlayerTwo"
                         android:text="@string/_2" />
 
                     <Button
                         style="@style/button_style"
-                        android:onClick="addThreeForPlayerOne"
+                        android:onClick="addThreeForPlayerTwo"
                         android:text="@string/_3" />
 
                 </LinearLayout>
@@ -183,17 +171,17 @@
 
                     <Button
                         style="@style/button_style"
-                        android:onClick="addOneForPlayerOne"
+                        android:onClick="addFourForPlayerTwo"
                         android:text="@string/_4" />
 
                     <Button
                         style="@style/button_style"
-                        android:onClick="addTwoForPlayerOne"
+                        android:onClick="addFiveForPlayerTwo"
                         android:text="@string/_5" />
 
                     <Button
                         style="@style/button_style"
-                        android:onClick="addThreeForPlayerOne"
+                        android:onClick="addSixForPlayerTwo"
                         android:text="@string/_6" />
                 </LinearLayout>
 

@@ -3,5 +3,6 @@
 
     <dimen name="player_names">14sp</dimen>
     <dimen name="player_scores">58sp</dimen>
-
+    <dimen name="buttonMaxWidth">170dp</dimen>
+    <dimen name="buttonMinWidth">60dp</dimen>
 </resources>

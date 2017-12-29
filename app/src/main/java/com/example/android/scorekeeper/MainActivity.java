@@ -19,6 +19,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    /**
+     * Displays the given score for Player One.
+     */
+    public void displayForPlayerOne(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.player_one_score);
+        scoreView.setText(String.valueOf(score));
+    }
+    /**
+     * Displays the given score for Player Two.
+     */
+    public void displayForPlayerTwo(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.player_two_score);
+        scoreView.setText(String.valueOf(score));
+    }
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
@@ -43,20 +57,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /**
-     * Displays the given score for Player One.
-     */
-    public void displayForPlayerOne(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.player_one_score);
-        scoreView.setText(String.valueOf(score));
-    }
-    /**
-     * Displays the given score for Player Two.
-     */
-    public void displayForPlayerTwo(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.player_two_score);
-        scoreView.setText(String.valueOf(score));
-    }
+
     /**
      * Increase the score for Player One by 1 points.
      */

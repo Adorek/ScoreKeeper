@@ -13,25 +13,29 @@ public class MainActivity extends AppCompatActivity {
     int scorePlayerOne = 0;
     int scorePlayerTwo = 0;
 
+    private TextView scoreViewPlayerOne;
+    private TextView scoreViewPlayerTwo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        scoreViewPlayerOne = findViewById(R.id.player_one_score);
+        scoreViewPlayerTwo = findViewById(R.id.player_two_score);
+
     }
     /**
      * Displays the given score for Player One.
      */
     public void displayForPlayerOne(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.player_one_score);
-        scoreView.setText(String.valueOf(score));
+        scoreViewPlayerOne.setText(String.valueOf(score));
     }
     /**
      * Displays the given score for Player Two.
      */
     public void displayForPlayerTwo(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.player_two_score);
-        scoreView.setText(String.valueOf(score));
+        scoreViewPlayerTwo.setText(String.valueOf(score));
     }
 
     @Override

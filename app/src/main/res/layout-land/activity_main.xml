@@ -34,6 +34,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/playerOne"
                     style="@style/player_name_style"
                     android:text="@string/player_one"
                     android:textSize="@dimen/player_names" />
